@@ -1,1 +1,1 @@
-# Directory for project cascading style sheetsop
+# Directory for project cascading style sheets
