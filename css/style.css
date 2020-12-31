@@ -1,17 +1,61 @@
 
-.all{
+body{
     height: 100%;
-    width: 100%
+    width: 100%;
+    font-family: 'Oxygen', sans-serif;
 }
 .header {
+    top:0px; 
+    /* position:absolute; 
+    left:0px; 
+    right:0px; 
+    height:10%; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/cubes.png);
+    background-color: #4F2D7F; */
+}
+
+.footer {
+    bottom:0px; 
+    /* position:absolute; 
+    left:0px; 
+    right:0px;
+    height:10%; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/cubes.png);
+    background-color: #4F2D7F; */
+}
+
+.head_foot {
     position:absolute; 
     left:0px; 
     right:0px; 
-    top:0px; 
     height:10%; 
-    background-color: #d7d7d7;
-    overflow: hidden
-}  
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/cubes.png);
+    background-color: #4F2D7F;
+
+}
+
+.transbox {
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    /* color: #4F2D7F; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .content {
     position:absolute; 
@@ -19,15 +63,14 @@
     right:0px; 
     top:10%; 
     bottom:10%; 
-    overflow: auto
+    overflow: auto;
 }
 
-.footer {
-    position:absolute; 
-    left:0px; 
-    right:0px; 
-    bottom:0px; 
-    height:10%; 
-    background-color: #d7d7d7;
-    overflow: hidden
+h1 {
+    color: #4F2D7F;
+}
+
+span {
+    color: #4F2D7F;
+    font-weight: bold;
 }
