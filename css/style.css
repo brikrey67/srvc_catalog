@@ -50,3 +50,29 @@ span {
     color: #4F2D7F;
     font-weight: bold;
 }
+
+.accordian {
+    flex: 1 0 29em;
+}
+.accordian input {
+    display: none;
+}
+.accordian input:checked ~ .detail {
+    font-size: 14px;
+    opacity: 1;
+    transition: font-size 300ms 0ms ease-in, opacity 300ms 300ms ease-in;
+}
+.accordian label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+.accordian .detail {
+    font-size: 0;
+    line-height: 1.25;
+    padding: 1rem;
+    opacity: 0;
+    transition: font-size 300ms 300ms ease-in, opacity 300ms 0ms ease-in;
+}
