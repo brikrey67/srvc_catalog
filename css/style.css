@@ -23,46 +23,67 @@
 }
 
 .subheading_style {
-    height:10%; 
+    height:10%;
     overflow: hidden;
     background-color: #ffffff;
     padding-left: 2%;
+    padding-right: 2%;
 }
 
 .pbackground_style {
+    background: url(../images/cubes.png);
     background-color: #4F2D7F;
     color: #FFFFFF;
-    padding: 2%;
-    border-style: solid none solid none;
-    border-color: #4F2D7F;
+    padding-left: 2%;
+}
+
+.content_style {
+    overflow-y: scroll;
+    height: 100%;
 }
 
 .wbackground_style {
     background-color: #FFFFFF;
     color: #4F2D7F;
     padding: 2%;
-    border-style: solid;
-    border-color: #4F2D7F;
+}
+
+.wheading {
+    color: #FFFFFF;
+}
+
+.service_style {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    padding-left: 2%;   
+    padding-right: 2%;
 }
 
 @media (min-width: 768px) {
-    .content_container_style {
+    .content_container_style_1 {
         display: flex;
         flex: 1;
         flex-direction: row;
-        /* justify-content: center;
-        margin: 1%; */
-        
+        height:600px;
+    }
+
+    .content_container_style_2 {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
     }
 
     .content_right_style {
         flex: 1;
         order: -1;
+        min-height: 0;
     }
 
     .content_left_style {
         flex: 0 0 30%;
-        
     }
 }
 
@@ -79,11 +100,8 @@ span {
 }
 
 img {
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
 }
 
 button {
@@ -92,6 +110,7 @@ button {
     padding: 10px 30px;
     text-align: center;
     display: inline-block;
+    font-size: 16px;
 }
 
 .accordian {
@@ -110,7 +129,7 @@ button {
 
 .accordian label {
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 16px;
     padding: 0.5em 1em;
     cursor: pointer;
