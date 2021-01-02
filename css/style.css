@@ -22,13 +22,37 @@
     height: 50%;
 }
 
+.subheading_style {
+    height:10%; 
+    overflow: hidden;
+    background-color: #ffffff;
+    padding-left: 2%;
+}
+
+.pbackground_style {
+    background-color: #4F2D7F;
+    color: #FFFFFF;
+    padding: 2%;
+    border-style: solid none solid none;
+    border-color: #4F2D7F;
+}
+
+.wbackground_style {
+    background-color: #FFFFFF;
+    color: #4F2D7F;
+    padding: 2%;
+    border-style: solid;
+    border-color: #4F2D7F;
+}
+
 @media (min-width: 768px) {
     .content_container_style {
         display: flex;
         flex: 1;
         flex-direction: row;
-        justify-content: space-around;
-        margin: 1%;
+        /* justify-content: center;
+        margin: 1%; */
+        
     }
 
     .content_right_style {
@@ -38,12 +62,15 @@
 
     .content_left_style {
         flex: 0 0 30%;
+        
     }
 }
 
 h1 {
     color: #4F2D7F;
-    text-align: center;
+    text-align: left;
+    font-weight: bolder;
+    padding-left: 2%;
 }
 
 span {
@@ -51,17 +78,36 @@ span {
     font-weight: bold;
 }
 
+img {
+    max-width: 50%;
+    height: auto;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+button {
+    background-color: #4F2D7F;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+}
+
 .accordian {
     flex: 1 0 29em;
 }
+
 .accordian input {
     display: none;
 }
-.accordian input:checked ~ .detail {
+
+.accordian input:checked ~ p {
     font-size: 14px;
     opacity: 1;
     transition: font-size 300ms 0ms ease-in, opacity 300ms 300ms ease-in;
 }
+
 .accordian label {
     font-weight: bold;
     text-transform: uppercase;
@@ -69,7 +115,8 @@ span {
     padding: 0.5em 1em;
     cursor: pointer;
 }
-.accordian .detail {
+
+.accordian p {
     font-size: 0;
     line-height: 1.25;
     padding: 1rem;
