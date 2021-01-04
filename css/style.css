@@ -55,6 +55,7 @@
 
 .wheading {
     color: #FFFFFF;
+    padding-left: 2%; 
 }
 
 .client_style {
@@ -106,7 +107,7 @@ span {
 }
 
 img {
-    max-width: 40%;
+    max-width: 60%;
     height: auto;
 }
 
