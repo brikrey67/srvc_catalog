@@ -81,12 +81,20 @@
         flex-direction: row;
     }
 
-    .content_right_style {
+    .content_right_style_1 {
         flex: 1;
         order: -1;
         min-height: 0;
         overflow-y: scroll;
         height: 100%;
+    }
+
+    .content_right_style_2 {
+        flex: 1;
+        order: -1;
+        /* min-height: 0; */
+        overflow: hidden;
+        /* height: 100%; */
     }
 
     .content_left_style {
