@@ -116,6 +116,7 @@
 
 .accordian label {
     font-weight: bold;
+    color: #FFFFFF;
     font-size: 16px;
     padding: 0.5em 1em;
     cursor: pointer;
@@ -124,6 +125,7 @@
 .accordian p {
     font-size: 0;
     line-height: 1.25;
+    color: #FFFFFF;
     padding: 1rem;
     opacity: 0;
     transition: font-size 300ms 300ms ease-in, opacity 300ms 0ms ease-in;
