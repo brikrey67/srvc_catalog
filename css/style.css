@@ -1,6 +1,4 @@
-
 .body_style{
-    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -9,8 +7,6 @@
 }
 
 .head_foot_style {
-    height:10%; 
-    overflow: hidden;
     background: url(../images/cubes.png);
     background-color: #4F2D7F;
 }
@@ -23,8 +19,6 @@
 }
 
 .subheading_style {
-    height:10%;
-    overflow: hidden;
     background-color: #ffffff;
     padding-left: 2%;
     padding-right: 2%;
@@ -35,16 +29,7 @@
     background-color: #4F2D7F;
     color: #FFFFFF;
     padding-left: 2%;
-}
-
-.content_style {
-    /* overflow-y: scroll;
-    height: 100%; */
-    display: flex;
-    flex-wrap: wrap;
-    margin: -0.5em auto;
-    width: 90%;
-    max-width: 60em;
+    padding-right: 2%;
 }
 
 .wbackground_style {
@@ -53,26 +38,25 @@
     padding: 2%;
 }
 
-.wheading {
-    color: #FFFFFF;
-    padding-left: 2%; 
-}
-
-.client_style {
+.content_container_style_1 {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 70%;
-    color: #FFFFFF;
-    padding-left: 2%;   
-    padding-right: 2%;
+    flex: 1;
+    flex-direction: column;
+    height:900px;
 }
 
-@media (min-width: 768px) {
+.content_container_style_2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+@media (min-width: 800px) {
     .content_container_style_1 {
         display: flex;
         flex: 1;
         flex-direction: row;
-        height:600px;
+        height:500px;
     }
 
     .content_container_style_2 {
@@ -80,52 +64,39 @@
         flex: 1;
         flex-direction: row;
     }
-
-    .content_right_style_1 {
-        flex: 1;
-        order: -1;
-        min-height: 0;
-        overflow-y: scroll;
-        height: 100%;
-    }
-
-    .content_right_style_2 {
-        flex: 1;
-        order: -1;
-        /* min-height: 0; */
-        overflow: hidden;
-        /* height: 100%; */
-    }
-
-    .content_left_style {
-        flex: 0 0 30%;
-    }
 }
 
-h1 {
-    color: #4F2D7F;
-    text-align: left;
-    font-weight: bolder;
-    padding-left: 2%;
+.content_right_style_1 {
+    flex: 1;
+    order: -1;
+    min-height: 0;
+    overflow-y: scroll;
+    height: 100%;
 }
 
-span {
-    color: #4F2D7F;
-    font-weight: bold;
+.content_right_style_2 {
+    flex: 1;
+    order: -1;
+    justify-content: center;
 }
 
-img {
-    max-width: 60%;
-    height: auto;
+.content_left_style {
+    flex: 0 0 30%;
+    justify-content: center;
 }
 
-button {
-    background-color: #4F2D7F;
-    color: #FFFFFF;
-    padding: 10px 30px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
+.service_style {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: -0.5em auto;
+    max-width: 60em;
+}
+
+.client_style {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
 }
 
 .accordian {
@@ -156,4 +127,30 @@ button {
     padding: 1rem;
     opacity: 0;
     transition: font-size 300ms 300ms ease-in, opacity 300ms 0ms ease-in;
+}
+
+h1 {
+    color: #4F2D7F;
+    text-align: left;
+    font-weight: bolder;
+    padding-left: 2%;
+}
+
+span {
+    color: #4F2D7F;
+    font-weight: bold;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+}
+
+button {
+    background-color: #4F2D7F;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
 }
